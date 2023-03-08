@@ -10,6 +10,7 @@ function App() {
   const openModal = () => {
     setIsOpen(true);
   };
+
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -21,7 +22,7 @@ function App() {
       <Modal
         appElement={document.getElementById("root") as HTMLElement}
         isOpen={modalIsOpen}
-        closeTimeoutMS={100}
+        closeTimeoutMS={500}
         onRequestClose={closeModal}
         contentLabel="New To Do Form"
         className={
@@ -31,14 +32,11 @@ function App() {
         <NewTodoForm handleCloseModal={closeModal} />
       </Modal>
       <div className="flex flex-col md:flex-col justify-center items-center p-4 rounded-lg">
-        <h1 className="font-medium text-xl mb-4 md:mb-4 md:mr-4">
-          You can add new To Do using this button:
-        </h1>
         <Button
           onClick={openModal}
-          text={"Create To Do"}
+          text={"Create Note"}
           color={"rgb(0 204 204)"} 
-          hoverColor={"rgb(0 102 102)"} //green-600
+          hoverColor={"rgb(0 102 102)"}
         />
       </div>
 

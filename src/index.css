@@ -51,13 +51,11 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, 18rem);
-  /*grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));*/
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .container-custom {
-    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-template-columns: repeat(auto-fill, 25rem);
   }
 }

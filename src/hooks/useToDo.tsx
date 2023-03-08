@@ -5,13 +5,14 @@ import exampleCard  from "./exampleCards";
 
 interface TodoState {
   todos: StoredToDo[];
-  // eslint-disable-next-line no-empty-pattern
   addTodo: ({}: ToDo) => void;
   removeTodo: (id: string) => void;
   markAsCompleted: (id: string) => void;
 }
 
+console.log(exampleCard);
 const todoSlice: StateCreator<TodoState> = (set) => ({
+
   todos: exampleCard,
   addTodo: ({ title, description, personAssigned, dateOfFinish }: ToDo) => {
     set((state) => ({

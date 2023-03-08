@@ -5,7 +5,7 @@ import { getDays } from "../helpers/getDate";
 import { MdDoneOutline } from "react-icons/md";
 import { IoMdRemoveCircleOutline } from "react-icons/io";
   
-export const Card = ({
+const Card = ({
   id,
   title,
   description,
@@ -18,7 +18,7 @@ export const Card = ({
     removeTodo(id);
   };
 
-  const handleMarkAsCompleted = (id: string) => {
+  const handleMarkCompleted = (id: string) => {
     markAsCompleted(id);
   };
 
@@ -31,9 +31,9 @@ export const Card = ({
     >
       <div>
         <h1 className="text-2xl font-medium text-center">{title}</h1>
-        <h2 className="text-lg text-center italic text-black/60">{personAssigned}</h2>
+        <h2 className="text-lg text-center italic text-black/60 mt-4">{personAssigned}</h2>
         {!isCompleted && (
-          <h3 className={`text-md text-center ${isOnTime ? "text-green-600/90" : "text-rose-600/90"}`}>{`⏰ ${days} days ${
+          <h3 className={`text-md text-center mt-4 ${isOnTime ? "text-red-800" : "text-red-800"}`}>{`${days} days ${
             isOnTime ? "Remaing" : "Past"
           }`}</h3>
         )}
@@ -47,22 +47,24 @@ export const Card = ({
             }}
             icon={<IoMdRemoveCircleOutline className="text-2xl mr-2" />}
             text={"Remove"}
-            color={"rgb(251 113 133)"} //rose-400
-            hoverColor={"rgb(225 29 72)"} //rose-600
+            color={"rgb(153 0 0)"} 
+            hoverColor={"rgb(102 0 0)"} 
           />
         )}
         {!isCompleted && (
           <Button
             onClick={() => {
-              handleMarkAsCompleted(id);
+              handleMarkCompleted(id);
             }}
-            icon={<MdDoneOutline className="text-2xl mr-2" />}
+            icon={<MdDoneOutline className="text-2xl mr-2 " />}
             text={"Complete"}
-            color={"rgb(74 222 128)"} //green-400
-            hoverColor={"rgb(22 163 74)"} //green-600
+            color={"rgb(0 204 204)"}
+            hoverColor={"rgb(0 153 153)"} 
           />
         )}
       </div>
     </div>
   );
 };
+
+export default Card;

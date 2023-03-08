@@ -4,7 +4,7 @@ const EmpthyStore = () => {
           <h1 className='text-3xl'>
           This App is empthy           
           </h1>
-          <h2 className='text-2xl text-black/80'>Please introduce the task that you want</h2>
+          <h2 className='text-2xl'>Please introduce the task that you want</h2>
       </div>
     )
   }

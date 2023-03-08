@@ -14,4 +14,4 @@ function getDays(dueDateString: string): {
     }
   }
   
-  export { getDays };
+export { getDays };

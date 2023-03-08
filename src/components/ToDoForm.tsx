@@ -63,7 +63,7 @@ const ToDoForm = ({ handleCloseModal }: ToDoFormProps) => {
           id="description"
           {...register("description", {
             required: true,
-            maxLength: 125,
+            maxLength: 150,
           })}
         />
       </div>
