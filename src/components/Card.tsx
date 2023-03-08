@@ -26,7 +26,7 @@ const Card = ({
   return (
     <div
       className={`${
-        isCompleted ? "bg-green-100" : "bg-accent"
+        isCompleted ? "bg-gray-300" : "bg-yellow-400"
       } w-[18rem] h-[31rem]  flex flex-col justify-between py-3 px-6  rounded-lg drop-shadow  md:w-[20rem] md:h-[24rem]`}
     >
       <div>
@@ -58,8 +58,8 @@ const Card = ({
             }}
             icon={<MdDoneOutline className="text-2xl mr-2 " />}
             text={"Complete"}
-            color={"rgb(0 204 204)"}
-            hoverColor={"rgb(0 153 153)"} 
+            color={"rgb(75 136 229)"}
+            hoverColor={"rgb(0 0 255)"} 
           />
         )}
       </div>

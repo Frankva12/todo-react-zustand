@@ -4,15 +4,15 @@ const exampleCard = [
       title: "Hello There",
       personAssigned: "General Kenobi",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "This is a note of an example that we want to put in here, to make an example.",
       dateOfFinish: "2023-03-31",
       isCompleted: false,
     },
     {
       id: "8a448fd3-d07e-4e4f-af00-3bd333f72590",
-      title: "This is a title",
+      title: "This is random",
       personAssigned: "Me",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etc.",
+      description: "This is a note of an example that we want to put in here, to make an example.",
       dateOfFinish: "2023-02-09",
       isCompleted: false,
     },
@@ -21,7 +21,7 @@ const exampleCard = [
       title: "Random Todo",
       personAssigned: "Francisco Vasconcelos",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etc.",
+        "This is a note of an example that we want to put in here, to make an example.",
       dateOfFinish: "2023-03-31",
       isCompleted: true,
     },

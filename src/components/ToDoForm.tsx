@@ -102,8 +102,8 @@ const ToDoForm = ({ handleCloseModal }: ToDoFormProps) => {
         <Button
           type="submit"
           text={"Add To Do"}
-          color={"rgb(0 204 204)"} 
-          hoverColor={"rgb(0 102 102)"}
+          color={"rgb(75 136 229)"}
+          hoverColor={"rgb(0 0 255)"} 
         />
       </div>
     </form>

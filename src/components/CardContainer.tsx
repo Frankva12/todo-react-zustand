@@ -24,7 +24,7 @@ const CardContainer = () => {
       <div>
         {pendingArr.length >= 1 && (
           <div className="py-4">
-            <p className="text-2xl font-bold text-red-800 py-4 flex items-center justify-center ">
+            <p className="text-2xl font-bold text-yellow-500 py-4 flex items-center justify-center ">
               Tasks
             </p>
             <div className="container-custom">{pendingArr}</div>
@@ -32,7 +32,7 @@ const CardContainer = () => {
         )}
         {completedArr.length >= 1 && (
           <div className="py-4">
-            <p className="text-2xl font-bold text-green-600 py-4 flex items-center justify-center">
+            <p className="text-2xl font-bold text-grey-600 py-4 flex items-center justify-center">
               Completed Tasks
             </p>
             <div className="container-custom">{completedArr}</div>
